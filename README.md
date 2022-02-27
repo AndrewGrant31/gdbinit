@@ -15,8 +15,10 @@ In the section titled "Additional Startup Commands" enter the following:
   
 Keep the two separate statements on separate lines  
 click Apply and then OK, your debugging session should be good to go!  
-When you click Step Into or F11 the debugger shouldn't take you into any of the standard header files   
-if it does make sure the text in the gdbinit file is correct and all the variables (the HOME variable in environment   
+You may need to restart Qt Creator, just to make sure the changes take effect. On reflection, it probably is a  
+good idea to restart Qt Creator.  
+When you click Step Into, or press F11, the debugger shouldn't take you into any of the standard header files   
+if it does make sure the text in the .gdbinit file is correct and all the variables (the HOME variable in environment   
 variables and the text in the Additional Startup Commands section are correct)  
 
 This file is distributed in the hope that it will be useful,  
