@@ -9,8 +9,10 @@ in either section (user or global) create a new variable with the name HOME
 set this to the path where you placed the .gdbinit file: C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
 If using Qt Creator, head to Tools->Options->Debugger->GDB   
 inc the section titled "Additional Startup Commands" anter the following:  
-set auto-load local-gdbinit on  
-add-auto-load-safe-path /  
+  
+**set auto-load local-gdbinit on**  
+**add-auto-load-safe-path /**  
+  
 Keep the two separate statements on separate lines  
 click Apply and then OK, your debugging session should be good to go!  
 When you click Step Into or F11 the debugger shouldn't take you into any of the standard header files   
