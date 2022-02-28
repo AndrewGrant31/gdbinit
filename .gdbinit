@@ -33,7 +33,6 @@ if 'c++' in gdb.execute('show language', to_string=True):
     skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++')
     skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include')
 end
-end
 
 define hookpost-run
     skipstdcxxheaders
