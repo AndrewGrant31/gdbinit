@@ -29,8 +29,6 @@ def skipAllIn(root):
 # do this for C++ only
 # the path[s] should reflect the locations of all the standard header files
 if 'c++' in gdb.execute('show language', to_string=True):
-    skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits')
-    skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++')
     skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include')
 end
 
