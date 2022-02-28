@@ -28,9 +28,7 @@ def skipAllIn(root):
             gdb.execute('skip file %s' % path, to_string=True)
 # do this for C++ only
 if 'c++' in gdb.execute('show language', to_string=True):
-    skipAllIn('/usr/include/c++')
-    skipAllIn('C:\ProgramData')
-    skipAllIn('C:\programdata')
+    skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits')
 end
 end
 
@@ -44,6 +42,41 @@ define hookpost-attach
     skipstdcxxheaders
 end
 
+skip -gfi /include/*/*/*
+skip -gfi /include/*/*
+skip -gfi /include/*
+
+skip dir /include/*/*/*
+skip dir /include/*/*
+skip dir /include/*
+
+skip -gfi /include/c++/*/*/*
+skip -gfi /include/c++/*/*
+skip -gfi /include/c++/*
+
+skip dir /include/c++/*/*/*
+skip dir /include/c++/*/*
+skip dir /include/c++/*
+
+skip -gfi /usr/include/c++/*/*/*
+skip -gfi /usr/include/c++/*/*
+skip -gfi /usr/include/c++/*
+
+skip dir /usr/include/c++/*/*/*
+skip dir /usr/include/c++/*/*
+skip dir /usr/include/c++/*
+
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*
+
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*\*.h
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*\*.h
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*\*.h 
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*.h
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*.h
+skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*.h 
+
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*
@@ -56,8 +89,5 @@ skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*
 
-skip -gfi /usr/include/c++/*/*/*
-skip -gfi /usr/include/c++/*/*
-skip -gfi /usr/include/c++/*
 
 
