@@ -11,9 +11,9 @@ If using Qt Creator, head to Tools->Options->Debugger->GDB
 In the section titled "Additional Startup Commands" enter the following:  
   
 **set auto-load local-gdbinit on**  
-**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/* **  
-**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*  **  
-**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*/* **  
+**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/***  
+**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/***  
+**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*/***  
 
 click Apply and then OK, your debugging session should be good to go!  
 You may need to restart Qt Creator, just to make sure the changes take effect. On reflection, it probably is a  
