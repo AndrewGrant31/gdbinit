@@ -13,7 +13,7 @@ Windows:
 **set auto-load local-gdbinit on**  
 **skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
 
-Everything else[?]:
+Everything else[?]:  
 **set auto-load local-gdbinit on**  
 **skip -gfi skip -gfi /include/\*/\*/\***  
 **skip -gfi /include/\*/\***  
