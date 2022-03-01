@@ -42,6 +42,14 @@ define hookpost-attach
     skipstdcxxheaders
 end
 
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*/*
+
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/*
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/*
+
 skip -gfi /include/*/*/*
 skip -gfi /include/*/*
 skip -gfi /include/*
@@ -69,13 +77,6 @@ skip dir /usr/include/c++/*
 skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*
 skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*
 skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*
-
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*\*.h
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*\*.h
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*\*.h 
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*.h
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*.h
-skip -gfi C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*.h 
 
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*
