@@ -15,9 +15,9 @@ Windows:
 
 Everything else[?]:
 **set auto-load local-gdbinit on**  
-**skip -gfi skip -gfi /include/\*/\*/\*** 
-**skip -gfi /include/\*/\***
-**skip -gfi /include/\***
+**skip -gfi skip -gfi /include/\*/\*/\***  
+**skip -gfi /include/\*/\***  
+**skip -gfi /include/\***  
 
 click Apply and then OK, your debugging session should be good to go!  
 You may need to restart Qt Creator, just to make sure the changes take effect. On reflection, it probably is a  
