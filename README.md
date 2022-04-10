@@ -9,7 +9,7 @@ in either section (user or global) create a new variable with the name HOME
 set this to the path where you placed the .gdbinit file: C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
 If using Qt Creator, head to Tools->Options->Debugger->GDB   
 In the section titled "Additional Startup Commands" enter the following:  
-Windows:  
+Windows (and without the astericks at the front of the statements - if they are there):  
 **set auto-load local-gdbinit on**  
 **skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
 
