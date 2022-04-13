@@ -14,7 +14,7 @@ Windows (and without the astericks at the front of the statements - if they are 
 **skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
 
 Check the version of mingw being used - it varies! 
-Navigate to Qt\Tools\ and see what the folder\directory is called,
+Navigate to Qt\Tools\ and see what the folder\directory is called,  
 insert that identifier where the previous statement reads mingw1120_64
 
 Everything else[?]:  
