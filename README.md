@@ -11,7 +11,11 @@ If using Qt Creator, head to Tools->Options->Debugger->GDB
 In the section titled "Additional Startup Commands" enter the following:  
 Windows (and without the astericks at the front of the statements - if they are there):  
 **set auto-load local-gdbinit on**  
-**skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
+**skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
+
+Check the version of mingw being used - it varies! 
+Navigate to Qt\Tools\ and see what the folder\directory is called,
+insert that identifier where the previous statement reads mingw1120_64
 
 Everything else[?]:  
 **set auto-load local-gdbinit on**  
