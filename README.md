@@ -8,8 +8,9 @@ get the set environment variables dialog box (type env in the search or use the 
 in either section (user or global) create a new variable with the name HOME  
 set this to the path where you placed the .gdbinit file: C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
 If using Qt Creator, head to Tools->Options->Debugger->GDB   
-In the section titled "Additional Startup Commands" enter the following:  
+In the section titled "Additional Startup Commands" enter (or copy and paste) the following:  
 Windows (and without the astericks at the front of the statements - if they are there):  
+
 **set auto-load local-gdbinit on**  
 **skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
 
@@ -17,7 +18,10 @@ Check the version of mingw being used - it varies!
 Navigate to Qt\Tools\ and see what the folder\directory is called,  
 insert that identifier where the previous statement reads mingw1120_64
 
-Everything else[?]:  
+It does no harm to put the following into the "Additional Startup Commands" if you are using Microsoft Windows. 
+Whatever isn't relevant is just ignored. 
+For Linux and Mac based installations, write in or just copy and paste the following (again without the astericks, if they are there).
+
 **set auto-load local-gdbinit on**  
 **skip -gfi skip -gfi /include/\*/\*/\***  
 **skip -gfi /include/\*/\***  
