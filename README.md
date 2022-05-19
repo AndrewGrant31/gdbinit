@@ -29,7 +29,7 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **skip -gfi \*/include/\***  
 **skip -gfi \*/include/\*/\***  
 
-*Note - on Linux installs*
+*Note - on Linux installs*  
 You may have to locate the header files and then in the section outlined above, insert the following:
 
 **skip -gfi /include/c++/12/***  
@@ -43,6 +43,7 @@ Just write in the previous line sinto your .gdbinit file.
 
 Check the value, in this case it is 12, yours' may vary...
 
+### Continue  
 click Apply and then OK, your debugging session should be good to go!  
 You may need to restart Qt Creator, just to make sure the changes take effect. On reflection, it probably is a  
 good idea to restart Qt Creator.  
