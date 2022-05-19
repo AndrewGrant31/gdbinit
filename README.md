@@ -43,7 +43,7 @@ Just write in the previous line sinto your .gdbinit file.
 
 Check the value, in this case it is 12, yours' may vary...
 
-### Continue  
+### Continue...  
 click Apply and then OK, your debugging session should be good to go!  
 You may need to restart Qt Creator, just to make sure the changes take effect. On reflection, it probably is a  
 good idea to restart Qt Creator.  
