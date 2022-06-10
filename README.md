@@ -26,8 +26,8 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **skip -gfi skip -gfi /include/\*/\*/\***  
 **skip -gfi /include/\*/\***  
 **skip -gfi /include/\***  
-**skip -gfi \*/include/\***  
-**skip -gfi \*/include/\*/\***  
+**skip -gfi /include/\***  
+**skip -gfi /include/\*/\***  
 
 *Note - on Linux installs*  
 You may have to locate the header files and then in the section outlined above, insert the following:
