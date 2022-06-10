@@ -35,7 +35,7 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/12/***  
 **skip -gfi \*/include/c++/12**  
 **skip -gfi \*/include/c++/12/*** 
-**skip -gfi \*/include/c++/12/**/***  
+**skip -gfi \*/include/c++/12/**/* **  
 **skip -gfi \*/include/c++/12*/**/**/***  
 
 You will, probably find you will to do the same in the .gdbinit file
