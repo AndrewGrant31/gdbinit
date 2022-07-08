@@ -23,7 +23,7 @@ Whatever isn't relevant is just ignored.
 For Linux and Mac based installations, write in or just copy and paste the following (again without the astericks, if they are there).
 
 **set auto-load local-gdbinit on**  
-**skip -gfi skip -gfi /include/\*/\*/\***  
+**skip -gfi /include/\*/\*/\***  
 **skip -gfi /include/\*/\***  
 **skip -gfi /include/\***  
 **skip -gfi /include/\***  
