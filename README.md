@@ -36,7 +36,7 @@ skip -gfi \*/include/c++/12*/*
 skip -gfi \*/include/c++/12/*  
 skip -gfi \*/include/c++/12/\*/*  
 skip -gfi \*/include/c++/12/\*/\*  
-skip -gfi \*/include/c++/12*/\*/\*/*
+skip -gfi \*/include/c++/12*/\*/\*/*  
 skip -gfi \*/include/c++/13*/\*  
 skip -gfi \*/include/c++/13/\*  
 skip -gfi \*/include/c++/13*/\*  
