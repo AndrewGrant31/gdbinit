@@ -25,28 +25,31 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **set auto-load local-gdbinit on**  
 **skip -gfi /include/\*/\*/\***  
 **skip -gfi /include/\*/\***  
-**skip -gfi /include/\***  
+**skip -gfi /include/\***    
 **skip -gfi /include/\***  
 **skip -gfi /include/\*/\***  
 
-*Note - on Linux installs*  
-You may have to locate the header files and then in the section outlined above, insert the following:
+**Note - on Linux installs**  
+You may have to locate the header files and then in the section outlined above, insert the following:  
+  
+**skip -gfi \*/include/c++/12*/\***  
+**skip -gfi \*/include/c++/12/\***  
+**skip -gfi \*/include/c++/12/\*\/***  
+**skip -gfi \*/include/c++/12/\*/\***  
+**skip -gfi \*/include/c++/12*/\*/\*/\***     
+**skip -gfi \*/include/c++/13*/\***    
+**skip -gfi \*/include/c++/13/\***  
+**skip -gfi \*/include/c++/13*/\/***    
+**skip -gfi \*/include/c++/13*/\*/\***    
+**skip -gfi \*/include/c++/13*/\*/\*/\***   
 
-**skip -gfi \*/include/c++/12*\/***  
-**skip -gfi \*/include/c++/12***  
-**skip -gfi \*/include/c++/12*\/***  
-**skip -gfi \*/include/c++/12*/\*/\***  
-**skip -gfi \*/include/c++/12*/\*/\*/\*** 
-**skip -gfi \*/include/c++/13*\/***  
-**skip -gfi \*/include/c++/13***  
-**skip -gfi \*/include/c++/13*\/***  
-**skip -gfi \*/include/c++/13*/\*/\***  
-**skip -gfi \*/include/c++/13*/\*/\*/\*** 
 
+Aplogies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
 Just write in the previous line sinto your .gdbinit file. 
 
-Check the value, in this case it is 12, yours' may vary...
+
+Check the value, in this case it is 12, yours' may vary (it could be 13...)...
 
 ### Continue...  
 click Apply and then OK, your debugging session should be good to go!  
