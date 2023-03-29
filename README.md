@@ -22,12 +22,12 @@ It does no harm to put the following into the "Additional Startup Commands" if y
 Whatever isn't relevant is just ignored. 
 For Linux and Mac based installations, write in or just copy and paste the following (again without the astericks, if they are there).
 
-**set auto-load local-gdbinit on**  
-**skip -gfi /include/\*/\*/\***  
-**skip -gfi /include/\*/\***  
-**skip -gfi /include/\***    
-**skip -gfi /include/\***  
-**skip -gfi /include/\*/\***  
+set auto-load local-gdbinit on
+skip -gfi /include/\*/\*/\*  
+skip -gfi /include/\*/\*  
+skip -gfi /include/\*    
+skip -gfi /include/\*  
+skip -gfi /include/\*/\*  
 
 **Note - on Linux installs**  
 You may have to locate the header files and then in the section outlined above, insert the following:  
@@ -36,13 +36,12 @@ skip -gfi \*/include/c++/12*/*
 skip -gfi \*/include/c++/12/*  
 skip -gfi \*/include/c++/12/\*/*  
 skip -gfi \*/include/c++/12/\*/\*  
-skip -gfi \*/include/c++/12*/\*/\*/*     
-skip -gfi \*/include/c++/13*/\*    
+skip -gfi \*/include/c++/12*/\*/\*/*
+skip -gfi \*/include/c++/13*/\*  
 skip -gfi \*/include/c++/13/\*  
-skip -gfi \*/include/c++/13*/\*    
-skip -gfi \*/include/c++/13*/\*/\*    
-skip -gfi \*/include/c++/13*/\*/\*/\*   
-
+skip -gfi \*/include/c++/13*/\*  
+skip -gfi \*/include/c++/13*/\*/\***  
+skip -gfi \*/include/c++/13*/\*/\*/\*  
 
 Aplogies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
