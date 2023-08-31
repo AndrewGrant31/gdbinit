@@ -53,7 +53,7 @@ Just write in the previous line sinto your .gdbinit file.
 
 Check the value, in this case it is 12, yours' may vary (it could be 13...)...  
 
-![Debugger Config]
+![Debugger Config](https://github.com/AndrewGrant31/gdbinit/blob/main/images/gdb_qt_config.png)
 
 ### Continue...  
 click Apply and then OK, your debugging session should be good to go!  
