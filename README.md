@@ -53,7 +53,7 @@ Just write in the previous line sinto your .gdbinit file.
 
 Check the value, in this case it is 12, yours' may vary (it could be 13...)...  
 
-![image]images/gdb_qt_config.png
+![Debugger Config]
 
 ### Continue...  
 click Apply and then OK, your debugging session should be good to go!  
@@ -66,3 +66,6 @@ variables and the text in the Additional Startup Commands section are correct)
 This file is distributed in the hope that it will be useful,  
 but WITHOUT ANY WARRANTY; without even the implied warranty of  
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+
+[def]: AndrewGrant31/gdbinit/images/gdb_qt_config.png
