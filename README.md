@@ -1,6 +1,8 @@
 # gdbinit
 Basic gdbinit file for use with Qt Creator
 
+If you are using Linux (or a Mac) place this file in $HOME/.config/QtProject  
+
 If using this file in MS Windows, especially with Qt Creator  
 clone this file, and place it in C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
 rename it .gdbinit (if it isn't already using that name) - make sure to place a period at the start of the name  
