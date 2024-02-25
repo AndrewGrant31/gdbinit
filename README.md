@@ -15,7 +15,7 @@ Windows (and without the astericks at the front of the statements - if they are 
 
 **set auto-load local-gdbinit on**  
 **skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
-**skip -gfi C:/Qt/Tools/mingw1310_64/bin  
+**skip -gfi C:/Qt/Tools/mingw1310_64/bin**    
 **skip -gfi C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/*/*/***  
 
 Check the version of mingw being used - it varies! 
@@ -34,7 +34,7 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **skip -gfi /include/\*/\*/\***    
 **skip -gfi /include/\*/\***    
 **skip -gfi /include/\***      
-**skip -gfi /include/\*    
+**skip -gfi /include/\***    
 **skip -gfi /include/\*/\***    
 
 **Note - on Linux installs**  
