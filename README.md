@@ -40,7 +40,7 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **Note - on Linux installs**  
 You may have to locate the header files and then in the section outlined above, insert the following:  
   
-**skip -gfi \*/include/c++/12/***
+**skip -gfi \*/include/c++/12/***   
 **skip -gfi \*/include/c++/12/***    
 **skip -gfi \*/include/c++/12/\*/***    
 **skip -gfi \*/include/c++/12/\*/\***    
