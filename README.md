@@ -40,16 +40,16 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **Note - on Linux installs**  
 You may have to locate the header files and then in the section outlined above, insert the following:  
   
-**skip -gfi \*/include/c++/12*/***    
-**skip -gfi \*/include/c++/12/***    
-**skip -gfi \*/include/c++/12/\*/***  
-**skip -gfi \*/include/c++/12/\*/\***  
-**skip -gfi \*/include/c++/12*/\*/\*/***  
-**skip -gfi \*/include/c++/13*/\***    
-**skip -gfi \*/include/c++/13/\***  
-**skip -gfi \*/include/c++/13*/\***  
-**skip -gfi \*/include/c++/13*/\*/\***  
-**skip -gfi \*/include/c++/13*/\*/\*/\***    
+**skip -gfi \*/include/c++/12*/* **    
+**skip -gfi \*/include/c++/12/* **    
+**skip -gfi \*/include/c++/12/\*/* **    
+**skip -gfi \*/include/c++/12/\*/\* **    
+**skip -gfi \*/include/c++/12*/\*/\*/* **    
+**skip -gfi \*/include/c++/13*/\* **    
+**skip -gfi \*/include/c++/13/\* **    
+**skip -gfi \*/include/c++/13*/\* **    
+**skip -gfi \*/include/c++/13*/\*/\* **    
+**skip -gfi \*/include/c++/13*/\*/\*/\* **      
 
 Aplogies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
