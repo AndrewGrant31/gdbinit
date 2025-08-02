@@ -50,6 +50,11 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/13/\***    
 **skip -gfi \*/include/c++/13/\*/\***    
 **skip -gfi \*/include/c++/13/\*/\*/\***      
+**skip -gfi \*/include/c++/14/\***    
+**skip -gfi \*/include/c++/14/\***    
+**skip -gfi \*/include/c++/14/\***    
+**skip -gfi \*/include/c++/14/\*/\***    
+**skip -gfi \*/include/c++/14/\*/\*/\***      
 
 Aplogies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
