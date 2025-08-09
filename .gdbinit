@@ -57,6 +57,11 @@ skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*
 skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/*
 skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/*
 
+skip dir C:/Qt/Tools/*
+skip dir C:/Qt/Tools/mingw1310_64/*
+
+skip dir C:/ProgramData/mingw64/mingw64
+
 skip -gfi /include/*/*/*
 skip -gfi /include/*/*
 skip -gfi /include/*
@@ -85,6 +90,10 @@ skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*
 skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*
 skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*
 
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\include\*
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\include\c++\*
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\includec++\bits\*
+
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*
@@ -96,6 +105,14 @@ skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*
+
+skip dir C:\ProgramData\mingw64\mingw64\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*
 
 
 
