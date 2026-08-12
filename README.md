@@ -38,9 +38,8 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 **skip -gfi /include/\*/\***    
 
 **Note - on Linux installs**  
-You may have to locate the header files and then in the section outlined above, insert the following:  
+You may have to locate the header files and then in the section outlined above, insert the following, enabling for each version you are using (change the version numbers as required):    
 
-*** Ignore this bit, I'll leave it here for reference only   
 **skip -gfi \*/include/c++/12/***   
 **skip -gfi \*/include/c++/12/***    
 **skip -gfi \*/include/c++/12/\*/***    
@@ -57,7 +56,8 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/14/\*/\***    
 **skip -gfi \*/include/c++/14/\*/\*/\***      
 
-*** end of ignore this bit.   
+
+#### _a more modern approach, but doesn't work with everything - prefer the approach outlined above, though you may want to use this, if your development is "modern" enough._ 
 
 **skip -gfi \*/include/c++/16/\***    
 **skip -gfi \*/include/c++/16/\***    
