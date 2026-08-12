@@ -63,12 +63,12 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/16/\***    
 **skip -gfi \*/include/c++/16/\***    
 **skip -gfi \*/include/c++/16/\*/\***    
-**skip -gfi \*/include/c++/16/\*/\*/\***
+**skip -gfi \*/include/c++/16/\*/\*/\***     
 **skip -gfi \*/16.1.0/include/c++/\***    
 **skip -gfi \*/16.1.0/include/c++/\***    
 **skip -gfi \*/16.1.0/include/c++/\***    
 **skip -gfi \16.1.0/include/c++/\*/\***    
-**skip -gfi \16.1.0/include/c++/\*/\*/\*** 
+**skip -gfi \16.1.0/include/c++/\*/\*/\***   
 
 Apologies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
