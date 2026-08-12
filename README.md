@@ -14,9 +14,9 @@ In the section titled "Additional Startup Commands" enter (or copy and paste) th
 Windows (and without the astericks at the front of the statements - if they are there):  
 
 **set auto-load local-gdbinit on**  
-**skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/\*/\*\/\***  
+**skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/\*/\*\/\***  
 **skip -gfi C:/Qt/Tools/mingw1310_64/bin**    
-**skip -gfi C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/\*/\*/***  
+**skip -gfi C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/\*/\*/***  
 
 Check the version of mingw being used - it varies! 
 Navigate to Qt\Tools\ and see what the folder\directory is called,  
@@ -39,7 +39,8 @@ For Linux and Mac based installations, write in or just copy and paste the follo
 
 **Note - on Linux installs**  
 You may have to locate the header files and then in the section outlined above, insert the following:  
-  
+
+*** Ignore this bit, I'll leave it here for reference only   
 **skip -gfi \*/include/c++/12/***   
 **skip -gfi \*/include/c++/12/***    
 **skip -gfi \*/include/c++/12/\*/***    
@@ -56,11 +57,24 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/14/\*/\***    
 **skip -gfi \*/include/c++/14/\*/\*/\***      
 
+*** end of ignore this bit.   
+
+**skip -gfi \*/include/c++/16/\***    
+**skip -gfi \*/include/c++/16/\***    
+**skip -gfi \*/include/c++/16/\***    
+**skip -gfi \*/include/c++/16/\*/\***    
+**skip -gfi \*/include/c++/16/\*/\*/\***
+**skip -gfi \*/16.1.0/include/c++/\***    
+**skip -gfi \*/16.1.0/include/c++/\***    
+**skip -gfi \*/16.1.0/include/c++/\***    
+**skip -gfi \16.1.0/include/c++/\*/\***    
+**skip -gfi \16.1.0/include/c++/\*/\*/\*** 
+
 Apologies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
-Just write in the previous line sinto your .gdbinit file. 
+Just write in the previous lines into your .gdbinit file. 
 
-Check the value, in this case it is 12, yours' may vary (it could be 13...)...  
+Check the value, in this case it is 12, yours' may vary (it could be 13 or 16 or 22 or some other number...)...  
 
 ![Debugger Config](https://github.com/AndrewGrant31/gdbinit/blob/main/images/gdb_qt_config.png)
 
