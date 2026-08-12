@@ -30,14 +30,14 @@ def skipAllIn(root):
 # the path[s] should reflect the locations of all the standard header files
 # Windows:
 # Comment out this block if not on Windows and uncomment the if block below
-if 'c++' in gdb.execute('show language', to_string=True):
-    skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include')
-end
+#if 'c++' in gdb.execute('show language', to_string=True):
+#    skipAllIn('C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include')
+#end
 # Everything else[?]:
 # Uncomment this section and comment out the Windows block above
-#if 'c++' in gdb.execute('show language', to_string=True):
-#    skipAllIn('skip -gfi /usr/include')
-#end
+if 'c++' in gdb.execute('show language', to_string=True):
+    skipAllIn('skip -gfi /usr/include')
+end
 
 define hookpost-run
     skipstdcxxheaders
@@ -49,13 +49,21 @@ define hookpost-attach
     skipstdcxxheaders
 end
 
-skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*
-skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*
-skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*/*/*
+skip -gfi /opt/homebrew/Cellar/gcc/16.1.0/bin/include/*
+skip -gfi /opt/homebrew/Cellar/gcc/16.1.0/bin/include/*/*
+skip -gfi /opt/homebrew/Cellar/gcc/16.1.0/bin/include/*/*/*
 
-skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/*
-skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/*
-skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/*
+skip -gfi /opt/homebrew/Cellar/llvm/22.1.8/include/*
+skip -gfi /opt/homebrew/Cellar/llvm/22.1.8/include/*/*
+skip -gfi /opt/homebrew/Cellar/llvm/22.1.8/include/*/*/*
+
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/*
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/*/*
+skip -gfi C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/*/*/*
+
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/*
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/c++/*
+skip dir C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/c++/bits/*
 
 skip dir C:/Qt/Tools/*
 skip dir C:/Qt/Tools/mingw1310_64/*
@@ -86,13 +94,13 @@ skip dir /usr/include/c++/*/*/*
 skip dir /usr/include/c++/*/*
 skip dir /usr/include/c++/*
 
-skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\*
-skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\*
-skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\c++\bits\*
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\c++\*
+skip dir C:\Qt\Tools\mingw900_64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\c++\bits\*
 
-skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\include\*
-skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\include\c++\*
-skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\13.1.0\includec++\bits\*
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\c++\*
+skip dir C:\Qt\Tools\mingw1310_64\lib\gcc\x86_64-w64-mingw32\16.1.0\includec++\bits\*
 
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*\*
 skip -gfi C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*\*\*
@@ -107,12 +115,12 @@ skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*\*
 skip dir C:\programdata\chocolatey\lib\mingw\tools\install\mingw64\include\*
 
 skip dir C:\ProgramData\mingw64\mingw64\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*\*\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*\*
-skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\13.2.0\include\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*\*\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*\*
+skip dir C:\ProgramData\mingw64\mingw64\lib\gcc\x86_64-w64-mingw32\16.1.0\include\*
 
 
 
