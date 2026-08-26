@@ -1,17 +1,17 @@
 # gdbinit
 Basic gdbinit file for use with Qt Creator
 
-If you are using Linux (or a Mac) place this file in $HOME/.config/QtProject  
+If you are using Linux (or a Mac) place this file in **$HOME/.config/QtProject**  
 
 If using this file in MS Windows, especially with Qt Creator  
-clone this file, and place it in C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
+clone this file, and place it in **C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator**  
 rename it .gdbinit (if it isn't already using that name) - make sure to place a period at the start of the name  
 get the set environment variables dialog box (type env in the search or use the control panel)  
 in either section (user or global) create a new variable with the name HOME  
-set this to the path where you placed the .gdbinit file: C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator  
+set this to the path where you placed the .gdbinit file: **C:\Users\<yourusername>\AppData\Roaming\QtProject\qtcreator**  
 If using Qt Creator, head to Tools->Options->Debugger->GDB   
 In the section titled "Additional Startup Commands" enter (or copy and paste) the following:  
-Windows (and without the astericks at the front of the statements - if they are there):  
+Windows (and without the astericks at the front of the statements - if they are there, but do include the asterisks at the end):  
 
 **set auto-load local-gdbinit on**  
 **skip -gfi C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/\*/\*\/\***  
@@ -20,7 +20,9 @@ Windows (and without the astericks at the front of the statements - if they are 
 
 Check the version of mingw being used - it varies! 
 Navigate to Qt\Tools\ and see what the folder\directory is called,  
-insert that identifier where the previous statement reads mingw1120_64
+insert that identifier where the previous statement reads mingw1310_64. 
+You may have to change the compiler version number as well.  
+Do a **gcc --version** (on the command line) to get the current version and change it whatever is displayed.  
 
 It does no harm to put the following into the "Additional Startup Commands" if you are using Microsoft Windows. 
 Whatever isn't relevant is just ignored. 
@@ -67,8 +69,8 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/16.1.0/include/c++/\***    
 **skip -gfi \*/16.1.0/include/c++/\***    
 **skip -gfi \*/16.1.0/include/c++/\***    
-**skip -gfi \16.1.0/include/c++/\*/\***    
-**skip -gfi \16.1.0/include/c++/\*/\*/\***   
+**skip -gfi \*/16.1.0/include/c++/\*/\***    
+**skip -gfi \*/16.1.0/include/c++/\*/\*/\***   
 
 Apologies for the formatting... still learning markdown... 
 You will, probably find you will to do the same in the .gdbinit file
