@@ -24,9 +24,9 @@ insert that identifier where the previous statement reads mingw1310_64.
 You may have to change the compiler version number as well.  
 Do a **gcc --version** (on the command line) to get the current version and change it whatever is displayed.  
 
-It does no harm to put the following into the "Additional Startup Commands" if you are using Microsoft Windows. 
-Whatever isn't relevant is just ignored. 
-For Linux and Mac based installations, write in or just copy and paste the following:
+It does no harm to put the following into the "Additional Startup Commands" if you are using Microsoft Windows.  
+Whatever isn't relevant is just ignored.  
+If you are using Linux or Mac based installations, write in or just copy and paste the following:   
 
 **set auto-load local-gdbinit on**  
 **skip -gfi \*/include/\*/\*/\***  
