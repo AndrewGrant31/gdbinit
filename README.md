@@ -59,7 +59,7 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/14/\*/\*/\***      
 
 
-#### _a more modern approach, but doesn't work with everything - prefer the approach outlined above, though you may want to use this, if your development is "modern" enough._ 
+#### _a more modern approach, but doesn't work with everything - prefer the approach outlined above, though you may want to use this, if your development is "modern" enough. (change the version number[s] as required) _    
 
 **skip -gfi \*/include/c++/16/\***    
 **skip -gfi \*/include/c++/16/\***    
