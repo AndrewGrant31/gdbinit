@@ -1,6 +1,29 @@
 # gdbinit
 Basic gdbinit file for use with Qt Creator
 
+### Change these (inside the gdbinit file) before using!  
+
+Bit dramatic, I know, but rather important, hence the drama.  :-)   
+
+Look for these lines:  
+
+For gcc/g++:  
+**skip -gfi /opt/homebrew/Cellar/gcc/16.1.0/bin/include/\*/\*/\***    
+For clang/clang++:  
+**skip -gfi /opt/homebrew/Cellar/llvm/22.1.8/include/***    
+
+and change to the version you have installed on your machine    
+for example, on my machine I have currently have gcc version 16.2.0 and clang version 23.1.1   
+
+there are a lot of these instructions, so probably best you use and editor where you can do a mass replacement  
+
+skip -gfi /opt/homebrew/Cellar/gcc/16.2.0/bin/include/\*/\*/\*   
+skip -gfi /opt/homebrew/Cellar/llvm/23.1.1/include/*   
+
+Use your editors' search and replace functionality to ensure consistency and gaurantee reliability    
+
+## Onwards...  
+
 If you are using Linux (or a Mac) place this file in **$HOME/.config/QtProject**  
 
 If using this file in MS Windows, especially with Qt Creator  
