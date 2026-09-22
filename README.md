@@ -15,7 +15,7 @@ For clang/clang++:
 and change to the version you have installed on your machine    
 for example, on my machine I have currently have gcc version 16.2.0 and clang version 23.1.1   
 
-there are a lot of these instructions, so probably best you use and editor where you can do a mass replacement  
+there are a lot of these instructions, so probably best you use an editor where you can do a mass replacement  
 
 skip -gfi /opt/homebrew/Cellar/gcc/16.2.0/bin/include/\*/\*/\*   
 skip -gfi /opt/homebrew/Cellar/llvm/23.1.1/include/*   
