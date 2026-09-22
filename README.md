@@ -82,7 +82,7 @@ You may have to locate the header files and then in the section outlined above, 
 **skip -gfi \*/include/c++/14/\*/\*/\***      
 
 
-#### _a more modern approach, but doesn't work with everything - prefer the approach outlined above, though you may want to use this, if your development is "modern" enough. (change the version number[s] as required) _    
+#### _a more modern approach, but doesn't work with everything - prefer the approach outlined above, though you may want to use this, if your development is "modern" enough. (change the version number[s] as required, for example, change the 16.1.0 to 16.2.0) _    
 
 **skip -gfi \*/include/c++/16/\***    
 **skip -gfi \*/include/c++/16/\***    
